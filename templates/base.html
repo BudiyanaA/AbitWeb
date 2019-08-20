@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Web Abit</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            background-color: #fdfdfd;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #f00000;
+            border-color: #dc281e;
+        }
+        .masthead {
+            background: #3398E1;
+            height: auto;
+            padding-bottom: 15px;
+            box-shadow: 0 16px 48px #E3E7EB;
+            padding-top: 10px;
+        }
+        /* test */
+        .nav-text-color {
+            color: #da5c67;
+        }
+        a.ex1 {
+            border: 1px solid red; 
+            padding-right: 0.001cm;
+        }
+    </style>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e5e5e5;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+              <a class="ex1" href="#"><img src="/media/icon.png" alt="Abit-Logo" width="50%"></a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+                <li class="nav-item">
+                    <a class="nav-item nav-link " href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">KKM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Prestasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Tentang</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Cari ..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="background-color:#da5c67; outline:none;" type="submit"><img src="/media/search.png"></button>
+                <button class="btn btn-outline-success" style="background-color:#da5c67; color: #fff; outline:none;" type="button">Masuk</button>
+              </form>
+            </div>
+        </nav>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+        <!-- Footer -->
+        <footer class="py-3 bg-grey">
+            <p class="m-0 text-dark text-center ">Copyright &copy; Django Central</p>
+        </footer>
+    </body>
+</html>
